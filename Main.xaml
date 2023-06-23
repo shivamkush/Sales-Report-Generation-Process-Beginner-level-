@@ -89,25 +89,25 @@
               <av:Size x:Key="ShapeSize">200,52.8</av:Size>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[dtInputfile]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="603.2,2666.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+          <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[dtInputfile]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="603.2,2768.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
             <ui:ForEachRow.Body>
               <ActivityAction x:TypeArguments="sd:DataRow">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="553.6,2516.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="553.6,2619.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <p:WordApplicationScope AutoSave="False" DisplayName="Word Application Scope" FilePath="Master_Template.docx" sap:VirtualizedContainerService.HintSize="510.4,2427.2" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+                  <p:WordApplicationScope AutoSave="False" DisplayName="Word Application Scope" FilePath="Master_Template.docx" sap:VirtualizedContainerService.HintSize="510.4,2529.6" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
                     <p:WordApplicationScope.Body>
                       <ActivityAction x:TypeArguments="ui:WordDocument">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476.8,2317.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476.8,2420" sap2010:WorkflowViewState.IdRef="Sequence_1">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:Boolean" Name="open" />
                           </Sequence.Variables>
@@ -410,6 +410,7 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:KillProcess>
                           <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="Completed from dev A" />
+                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="Completed from dev B also" />
                         </Sequence>
                       </ActivityAction>
                     </p:WordApplicationScope.Body>
